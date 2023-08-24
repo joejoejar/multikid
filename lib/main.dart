@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'FUN PLAY NUMBER'),
+      home: const MyHomePage(title: 'FUNer PLAY NUMBER'),
     );
   }
 }
@@ -82,7 +82,8 @@ class _MyHomePageState extends State<MyHomePage> {
               CardExample(),
               CardExample(),
               CardExample(),
-
+              CardExample(),
+              CardExample(),
           ],
 
 
@@ -136,7 +137,5 @@ class CardExample extends StatelessWidget {
       ),
     );
  }
-
-  
 
 }
