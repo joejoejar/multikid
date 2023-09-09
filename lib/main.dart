@@ -55,8 +55,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -66,35 +64,33 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-
-      body: const Column(
-          children: <Widget>[
-              CardExample(),
-              CardExample(),
-              CardExample(),
-              CardExample(),
-              CardExample(),
-              CardExample(),
+        appBar: AppBar(
+          // TRY THIS: Try changing the color here to a specific color (to
+          // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
+          // change color while the other colors stay the same.
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          // Here we take the value from the MyHomePage object that was created by
+          // the App.build method, and use it to set our appbar title.
+          title: Text(widget.title),
+        ),
+        body: ListView(
+          padding: const EdgeInsets.all(8),
+          children: const <Widget>[
+            CardExample(),
+            CardExample(),
+            CardExample(),
+            CardExample(),
+            CardExample(),
+            CardExample(),
+            CardExample(),
+            CardExample(),
           ],
+        )
 
-
-
-
-      ),
-      // This trailing comma makes auto-formatting nicer for build methods.
-    );
+        // This trailing comma makes auto-formatting nicer for build methods.
+        );
   }
 }
-
 
 class CardExample extends StatelessWidget {
   const CardExample({super.key});
@@ -136,6 +132,5 @@ class CardExample extends StatelessWidget {
         ),
       ),
     );
- }
-
+  }
 }
